@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veltexra · store preview</title>
+<link rel="icon" type="image/png" href="/theme/veltexra-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Same values the theme writes from its default settings (snippets/css-variables.liquid) */
+  :root {
+    --color-bg: #F6F1EA; --color-bg-alt: #EDE5D9; --color-text: #1A1714; --color-text-rgb: 26, 23, 20;
+    --color-accent: #A8834A; --color-button: #1A1714; --color-button-text: #F6F1EA; --color-tile: #F0E9DF; --color-sale: #8C3B2E;
+    --font-heading-family: "Playfair Display", serif; --font-heading-style: normal; --font-heading-weight: 400;
+    --font-body-family: Jost, sans-serif; --font-body-style: normal; --font-body-weight: 400; --font-body-weight-bold: 500;
+    --heading-scale: 1; --body-scale: 1; --page-width: 1360px; --section-spacing: 96px; --button-radius: 0px;
+    --logo-width: 200px; --header-height: 84px;
+  }
+  .preview-badge {
+    position: fixed; left: 12px; bottom: 12px; z-index: 120;
+    padding: 6px 12px; border-radius: 999px;
+    background: var(--color-text); color: var(--color-bg);
+    font: 500 11px/1.4 Jost, sans-serif; letter-spacing: .12em; text-transform: uppercase; opacity: .85;
+  }
+  .section-header { position: sticky; top: 0; }
+</style>
+<link rel="stylesheet" href="/theme/base.css">
+</head>
+<body>
+<a class="skip-link visually-hidden" href="#MainContent">Skip to content</a>
+
+<div class="section-announcement">
+  <div class="announcement"><div class="page-width announcement__inner">
+    <p class="announcement__item is-active">Free shipping over $75 · Gift wrapping on request</p>
+  </div></div>
+</div>
+
+<div class="section-header">
+  <header class="header header--logo-center" data-header>
+    <div class="page-width header__inner">
+      <div class="header__left">
+        <button type="button" class="header__icon header__menu-toggle" data-drawer-open="MenuDrawer" aria-label="Open menu" data-icon="menu"></button>
+        <nav class="header__nav" aria-label="Main">
+          <ul class="nav" role="list">
+            <li class="nav__item"><a class="nav__link" href="#/collections/for-her">For Her</a></li>
+            <li class="nav__item"><a class="nav__link" href="#/collections/for-him">For Him</a></li>
+            <li class="nav__item nav__item--mega">
+              <a class="nav__link" href="#/collections/all" aria-haspopup="true">Brands</a>
+              <div class="nav__mega"><div class="page-width nav__mega-inner" data-brand-mega></div></div>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#/collections/all" aria-haspopup="true">Scent</a>
+              <ul class="nav__dropdown" role="list" data-scent-dropdown></ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#/" class="header__logo"><img src="/theme/veltexra-wordmark.png" alt="Veltexra" width="624" height="82" class="header__logo-img"></a>
+      <div class="header__icons">
+        <button type="button" class="header__icon" data-drawer-open="SearchModal" aria-label="Search" data-icon="search"></button>
+        <a href="#/account" class="header__icon header__icon--account" aria-label="Account" data-icon="account"></a>
+        <a href="#/cart" class="header__icon header__icon--cart" data-drawer-open="CartDrawer" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="cart-bubble" data-cart-bubble hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="MainContent" class="main" role="main" tabindex="-1" data-app></main>
+
+<footer class="footer">
+  <div class="page-width">
+    <div class="footer__brand"><a href="#/"><img src="/theme/veltexra-logo.png" alt="Veltexra Parfums" width="908" height="210" loading="lazy" class="footer__logo"></a></div>
+    <div class="footer__grid">
+      <div class="footer__block footer__block--newsletter">
+        <h2 class="h3 footer__heading">First to know</h2>
+        <div class="rte footer__text"><p>New arrivals, restocks and the occasional private sale. One email a month, never more.</p></div>
+        <form class="newsletter-form" data-newsletter>
+          <div class="newsletter-form__field">
+            <label for="FooterNewsletter-email" class="visually-hidden">Email</label>
+            <input id="FooterNewsletter-email" type="email" class="newsletter-form__input" placeholder="Your email" required>
+            <button type="submit" class="newsletter-form__button">Sign up</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__block">
+        <h2 class="eyebrow footer__heading">Help</h2>
+        <ul class="footer__links" role="list">
+          <li><a href="#/contact" class="footer__link">Contact</a></li>
+          <li><a href="#/contact" class="footer__link">Shipping</a></li>
+          <li><a href="#/contact" class="footer__link">Returns</a></li>
+          <li><a href="#/account" class="footer__link">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h2 class="eyebrow footer__heading">Ask us</h2>
+        <div class="rte footer__text"><p>Not sure which scent is right? Write to us and we'll help you choose.</p></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left"></div>
+      <div class="footer__bottom-right"><p class="footer__copyright">&copy; 2026 <a href="#/">Veltexra</a></p></div>
+    </div>
+  </div>
+</footer>
+
+<div id="MenuDrawer" class="drawer drawer--left" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Menu">
+  <div class="drawer__header">
+    <span class="eyebrow drawer__title">Menu</span>
+    <button type="button" class="drawer__close" data-drawer-close aria-label="Close" data-icon="close"></button>
+  </div>
+  <nav class="drawer__body"><ul class="menu-drawer__list" role="list" data-menu-list></ul></nav>
+  <div class="drawer__footer menu-drawer__footer">
+    <a href="#/account" class="menu-drawer__account"><span data-icon="account"></span>Sign in</a>
+  </div>
+</div>
+
+<div id="SearchModal" class="search-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Search">
+  <div class="page-width">
+    <form class="search-modal__form" data-search-form>
+      <span data-icon="search"></span>
+      <label for="SearchModalInput" class="visually-hidden">Search</label>
+      <input type="search" id="SearchModalInput" class="search-modal__input" placeholder="Search fragrances, brands, notes" autocomplete="off" data-autofocus data-predictive-input>
+      <button type="button" class="search-modal__close" data-drawer-close aria-label="Close search" data-icon="close"></button>
+    </form>
+    <div class="predictive" data-predictive-results aria-live="polite"></div>
+  </div>
+</div>
+
+<div id="CartDrawer" class="drawer drawer--right" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Your bag">
+  <div class="cart-drawer__inner" data-cart-drawer-inner></div>
+</div>
+
+<div id="FacetsDrawer" class="drawer drawer--left" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Filter"></div>
+
+<div class="preview-badge">Store preview · example prices</div>
+
+<script src="/data.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
