@@ -31,6 +31,7 @@ async function main() {
   for (const f of ['base.css', 'veltexra-wordmark.png', 'veltexra-logo.png', 'veltexra-icon.png', 'veltexra-favicon.png']) {
     fs.copyFileSync(path.join(THEME_ASSETS, f), path.join(DIST, 'theme', f));
   }
+  fs.copyFileSync(path.join(__dirname, 'theme-noir.css'), path.join(DIST, 'theme', 'theme-noir.css'));
 
   // Product photos: 1200px is plenty for tiles and the product gallery
   const used = new Set(data.flatMap((p) => p.images.map((src) => path.basename(src))));
